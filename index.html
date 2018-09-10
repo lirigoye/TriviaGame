@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TriviaGame</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+</head>
+
+<body background="assets/images/backImage2.jpg">
+
+    <div class="view_port">
+        <div class="message">
+            <b>Trivia Game!</b>
+        </div>
+        <div class="cylon_eye"></div>
+    </div>
+    <br>
+    <div class="start">
+        <button id="startBtn" class="btn btn-primary btn-lg">Start Game</button>
+    </div>
+    <br>
+    <div class="time">
+    <p><b>Time Remaining: </b><span id="countdowntimer"> <b>15</b> </span> seconds</p>
+    </div>
+    <br>
+    <div id='questions' class="container">
+        <div><b>Which liquor is made from the blue agave plant?</b></div>
+        <div class="row">
+            <div class="col-sm">
+                <input type="radio" name="question1" value="wrong"/> Rum
+            </div>
+            <div class="col-sm">
+                <input type="radio" name="question1" value="correct"/> Vodka
+            </div>
+            <div class="col-sm">
+                <input type="radio" name="question1" value="wrong"/> Tequila
+            </div>
+        </div>
+        <br>
+        <div><b>What is sushi traditionally wrapped in?</b></div>
+        <div class="row">
+            <div class="col-sm">
+                <input type="radio" name="question2" value="wrong" /> Spinach
+            </div>
+            <div class="col-sm">
+                <input type="radio" name="question2" value="correct" /> Seaweed
+            </div>
+            <div class="col-sm">
+                <input type="radio" name="question2" value="wrong" /> Maki
+            </div>
+        </div>
+        <br>
+        <div><b>Guinness beer was first brewed in which country?</b></div>
+        <div class="row">
+            <div class="col-sm">
+                <input type="radio" name="question3" value="correct" /> Ireland
+            </div>
+            <div class="col-sm">
+                <input type="radio" name="question3" value="wrong" /> Australia
+            </div>
+            <div class="col-sm">
+                <input type="radio" name="question3" value="wrong" /> China
+            </div>
+        </div>
+        <br>
+        <div><b>When was the fast food chain, McDonalds, founded?</b></div>
+        <div class="row">
+            <div class="col-sm">
+                <input type="radio" name="question4" value="wrong" /> 1911
+            </div>
+            <div class="col-sm">
+                <input type="radio" name="question4" value="wrong" /> 2000
+            </div>
+            <div class="col-sm">
+                <input type="radio" name="question4" value="correct" /> 1995
+            </div>
+        </div>
+        <br>
+        <div><b>What US state is famous for their juicy peaches?</b></div>
+        <div class="row">
+            <div class="col-sm">
+                <input type="radio" name="question5" value="wrong" /> Florida
+            </div>
+            <div class="col-sm">
+                <input type="radio" name="question5" value="correct" /> Georgia
+            </div>
+            <div class="col-sm">
+                <input type="radio" name="question5" value="wrong" /> California
+            </div>
+        </div>
+        <br>
+        <div><b>"How many different flavor of jelly beans exist?</b></div>
+        <div class="row">
+            <div class="col-sm">
+                <input type="radio" name="question6" value="correct" /> 50
+            </div>
+            <div class="col-sm">
+                <input type="radio" name="question6" value="wrong" /> 190
+            </div>
+            <div class="col-sm">
+                <input type="radio" name="question6" value="wrong" /> 100
+            </div>
+        </div>
+        <br>
+        <div class="greenAnswers"><h4><b>Correct: </b></h4>
+            <div id="correctAnswersCount"></div>  
+        </div>
+        <div class="redAnswers"><h4><b>Wrong: </b></h4>
+            <div id="wrongAnswersCount"></div> 
+        </div>
+        <div class="undefinedAnswers"><h4><b>Undefined: </b></h4>
+            <div id="undefinedAnswersCount"></div>  
+        </div>
+    
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    
+</body>
+</html>
